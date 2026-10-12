@@ -2,36 +2,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andrew Is Gay</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <title>I'm Finally Out of the Closet!</title>
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 100%;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    background-image: url("background.png");
-    background-size: 300px 300px;
-    background-repeat: repeat;
-    background-position: top left;
-}
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background-image: url("background.png");
+            background-size: 300px 300px;
+            background-repeat: repeat;
+        }
+
         .banner {
+            position: fixed;
+
+            /* Exact centre of browser */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            /* Responsive sizing */
             width: 95vw;
             max-width: 1800px;
-            max-height: 90vh;
-            max-height: 90dvh;
+            max-height: 95vh;
+            max-height: 95dvh;
             height: auto;
+
             object-fit: contain;
             display: block;
         }
